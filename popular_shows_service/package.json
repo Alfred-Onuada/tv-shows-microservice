@@ -1,0 +1,26 @@
+{
+  "name": "popular_shows_service",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "sequelize": "^6.29.0",
+    "sqlite3": "^5.1.4"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.13",
+    "@types/express": "^4.17.17",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.9.5"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "ts-node-dev ./app.ts",
+    "build": "tsc --build",
+    "start": "node ./dist/app"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
