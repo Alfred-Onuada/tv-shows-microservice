@@ -37,7 +37,7 @@ app.get('*', (req, res) => {
   res.status(404).json({ message: "Oops, you look a little lost there chief" });
 });
 
-const PORT = 3031;
+const PORT = process.env.PORT || 3031;
 app.listen(PORT, () => {
   console.log(`Details service is live at http://localhost:${PORT}`)
 })
