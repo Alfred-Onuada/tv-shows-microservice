@@ -17,6 +17,7 @@ RUN npm run build
 
 # environment variable
 ENV PORT=8000
+ENV DB_URL=mongodb://localhost:27017
 
 EXPOSE 8000
 
