@@ -1,0 +1,14 @@
+version: '3'
+services:
+  details_service:
+    build: ./details_service/
+    ports:
+      - "3030:8000"
+  popular_shows_service:
+    build: ./popular_shows_service/
+    ports:
+      - "3031:8001"
+  search_service:
+    build: ./search_service/
+    ports:
+      - "3032:8002"
