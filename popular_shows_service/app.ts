@@ -37,7 +37,7 @@ app.get('/', async (req, res) => {
       return;
     }
 
-    res.status(200).json({ shows: shows, page: page, total_pages: maxPage, message: "Shows retrieved successfully" });
+    res.status(200).json({ shows: shows, page: +page, total_pages: maxPage, message: "Shows retrieved successfully" });
 
   } catch (error) {
     console.log(error);
