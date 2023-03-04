@@ -8,7 +8,7 @@ RUN pip install -r requirements.txt
 
 COPY . .
 
-ENV DB_URL=mongodb+srv://adminUser:adminPassword@todo-db.az8gh.mongodb.net/admin
+ENV DB_URL="your.mongodb.url"
 
 ENV FLASK_RUN_PORT=8001
 

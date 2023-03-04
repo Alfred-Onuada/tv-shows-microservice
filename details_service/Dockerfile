@@ -17,7 +17,7 @@ RUN npm run build
 
 # environment variable
 ENV PORT=8000
-ENV DB_URL=mongodb+srv://adminUser:adminPassword@todo-db.az8gh.mongodb.net/admin
+ENV DB_URL="your.mongodb.url"
 
 EXPOSE 8000
 
