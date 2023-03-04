@@ -7,8 +7,21 @@ services:
   popular_shows_service:
     build: ./popular_shows_service/
     ports:
-      - "3031:8001"
+      - "3032-3034:8001"
+    deploy:
+      mode: replicated
+      replicas: 3
   search_service:
     build: ./search_service/
     ports:
-      - "3032:8002"
+      - "3031:8001"
+
+  # nginx service for load balancing on the popular_shows_service microservice
+  nginx:
+    image: nginx:latest
+    ports:
+      - "3035:80"
+    volumes:
+      - ./config/nginx:/etc/nginx/conf.d/
+    depends_on:
+      - popular_shows_service

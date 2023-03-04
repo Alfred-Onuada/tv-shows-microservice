@@ -10,8 +10,8 @@ COPY . .
 
 ENV DB_URL=mongodb+srv://adminUser:adminPassword@todo-db.az8gh.mongodb.net/admin
 
-ENV FLASK_RUN_PORT=8002
+ENV FLASK_RUN_PORT=8001
 
-EXPOSE 8002
+EXPOSE 8001
 
 CMD ["flask", "--app", "app",  "run", "--host=0.0.0.0"]
