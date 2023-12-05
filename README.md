@@ -1,4 +1,4 @@
-# Microservices Playground
+# Microservices Playground!
 This is a simple illustration of how to build, deploy and scale (locally) microservices using Docker and Nginx
 
 ## Installation
